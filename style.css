@@ -1,0 +1,43 @@
+.filterbutton {
+    background-color: whitesmoke;
+    border: 3px solid rgb(240, 235, 235);
+    padding: 10px;
+}
+.toolbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.toolbar a {
+    display: flex;
+    align-items: center;
+}
+.search {
+    padding: 10px;
+}
+.container {
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    visibility: hidden;
+}
+.all.active {
+    visibility: visible;
+}
+
+.accordion-button {
+    background-color: whitesmoke;
+    border: 3px solid rgb(240, 235, 235);
+}
+.accordion-content {
+    padding: 0 20px;
+    border: 1px solid whitesmoke;
+    /* max-height: 0;
+    overflow: hidden; */
+}
+
+ul {
+    list-style-type: none;
+}

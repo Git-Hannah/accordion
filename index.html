@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Accordion</title>
+    </head>
+    <body>
+        <button class="filterbutton">
+            Filter <i class="fa-solid fa-filter"></i>
+        </button>
+
+        <div class="container all active">
+            <nav class="toolbar">
+                <h3>Filters</h3>
+                <a href="#">Clear all</a>
+                <a href="#">Save view</a>
+            </nav>
+
+            <div class="search">
+                <input type="text" class="input" placeholder="Search..." />
+                <button class="btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div>
+                <details>
+                    <summary>Investment vehicle</summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <input type="checkbox" />
+                                <label>Vehicle 1</label>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Company</summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <input type="checkbox" />
+                                <label>Aircall</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" />
+                                <label>Foxintelligence</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" />
+                                <label>Spendesk</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" /> <label>Upflow</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" />
+                                <label>Yousign</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" />
+                                <label>Onemorecompany</label>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Deal Source</summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <input type="checkbox" />
+                                <label>Deal 1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" /> <label>Deal 2</label>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Status</summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <input type="checkbox" />
+                                <label>Status 1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" />
+                                <label>Status 2</label>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Date</summary>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>
+                                <input type="checkbox" /> <label>Date 1</label>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- Aufgaben:
+    1. Filterbutton Toggle Content
+    2. Suche
+    3. Toolbar
+    4. Accordion:
+        4.1 Accordion Items
+            - Investment vehicle
+            - Company
+            - Deal Source
+            - Status
+            - Date
+        4.2 Accordion Item
+            - List
+            - checkbox
+            - "View all"
+                - MDN: // add/remove visible, depending on test conditional, i less than 10
+                        div.classList.toggle("visible", i < 10 );
+        4.3 Clear all
+        4.4 Save View
+            - console.log
+-->
